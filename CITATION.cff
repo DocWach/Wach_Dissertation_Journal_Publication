@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+title: "A Systems Theoretic Metamodel for Defining Verification Models through Morphic Equivalence"
+message: "If you use these supplementary materials, please cite the original dissertation and forthcoming journal article."
+type: dataset
+authors:
+  - family-names: "Wach"
+    given-names: "Paul F."
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "University of Arizona"
+    email: "pfwach@arizona.edu"
+repository-code: "https://github.com/DocWach/Wach_Dissertation_Journal_Publication"
+abstract: >-
+  Supplementary materials for a journal article presenting a systems theoretic
+  metamodel for defining verification models through morphic equivalence.
+  Based on Wymorian systems theory, T3SD, and DEVS formalism, this work
+  establishes that verification models should be defined through combinations
+  of relationships between system requirements, system designs, verification
+  requirements (VRPS), and verification model morphic conditions (VMMC).
+keywords:
+  - verification
+  - systems engineering
+  - systems theory
+  - DEVS
+  - T3SD
+  - morphism
+  - equivalence
+  - MBSE
+  - metamodel
+license: CC-BY-4.0
+date-released: "2026-01-08"
+references:
+  - type: thesis
+    authors:
+      - family-names: "Wach"
+        given-names: "Paul F."
+    title: "Study of Equivalence in Systems Engineering within the Frame of Verification"
+    institution:
+      name: "Virginia Tech"
+    department: "Industrial and Systems Engineering"
+    year: 2022
+    location:
+      city: "Blacksburg"
+      region: "VA"
+    thesis-type: "Ph.D. Dissertation"
+  - type: article
+    authors:
+      - family-names: "Wach"
+        given-names: "Paul F."
+    title: "A systematic literature review on the mathematical underpinning of model-based systems engineering"
+    journal: "Systems Engineering"
+    volume: 27
+    issue: 2
+    year: 2024
+    doi: "10.1002/sys.21781"
