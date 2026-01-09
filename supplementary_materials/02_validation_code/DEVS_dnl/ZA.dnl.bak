@@ -1,0 +1,51 @@
+
+accepts input on IoXA1!
+accepts input on IoXA2!
+generates output on IoXA4!
+generates output on IoXA3!
+
+
+
+to start passivate in SA1!
+when in SA1 and receive IoXA1 go to SA1!
+
+external event for SA1 with IoXA1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SA1 and receive IoXA2 go to trans1!
+
+external event for SA1 with IoXA2 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+hold in trans1 for time 0!
+after trans1 output IoXA4!
+from trans1 go to SA2!
+
+output event for trans1  
+<%//Add your own code
+output.add(outIoXA4,null);%>!
+
+internal event for trans1  
+<%//place your own code for internal event here.%>!
+passivate in SA2!
+when in SA2 and receive IoXA2 go to SA2!
+
+external event for SA2 with IoXA2 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SA2 and receive IoXA1 go to trans2!
+
+external event for SA2 with IoXA1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+hold in trans2 for time 0!
+after trans2 output IoXA3!
+from trans2 go to SA1!
+
+output event for trans2  
+<%//Add your own code
+output.add(outIoXA3,null);%>!
+
+internal event for trans2  
+<%//place your own code for internal event here.%>!
+

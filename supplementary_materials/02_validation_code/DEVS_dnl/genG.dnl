@@ -1,0 +1,17 @@
+
+generates output on IoXG1!
+
+
+
+to start hold in SendX for time 1!
+after SendX output IoXG1!
+from SendX go to passive!
+
+output event for SendX  
+<%//Add your own code
+output.add(outIoXG1,null);%>!
+
+internal event for SendX  
+<%//place your own code for internal event here.%>!
+passivate in passive!
+

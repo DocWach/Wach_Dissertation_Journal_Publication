@@ -1,0 +1,21 @@
+
+accepts input on IoXG1!
+accepts input on IoXG2!
+
+
+
+to start passivate in SG1!
+when in SG1 and receive IoXG1 go to trans11!
+
+external event for SG1 with IoXG1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();
+%>!
+hold in trans11 for time 0!
+when in trans11 and receive IoXG2 go to SG1!
+
+external event for trans11 with IoXG2 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();
+%>!
+

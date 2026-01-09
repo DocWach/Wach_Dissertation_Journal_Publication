@@ -1,0 +1,23 @@
+
+accepts input on IoXC1!
+generates output on IoXC1!
+
+
+
+to start passivate in SC1!
+when in SC1 and receive IoXC1 go to trans11!
+
+external event for SC1 with IoXC1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+hold in trans11 for time 0!
+after trans11 output IoXC1!
+from trans11 go to SC1!
+
+output event for trans11  
+<%//Add your own code
+output.add(outIoXC1,null);%>!
+
+internal event for trans11  
+<%//place your own code for internal event here.%>!
+

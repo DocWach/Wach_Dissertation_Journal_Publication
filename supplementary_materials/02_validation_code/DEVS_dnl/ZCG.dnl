@@ -1,0 +1,28 @@
+
+accepts input on IoXG1!
+accepts input on IoXC1!
+generates output on IoXG2!
+generates output on IoXC1!
+
+
+to start passivate in SG1!
+when in SG1 and receive IoXG1 go to trans11!
+
+external event for SG1 with IoXG1 
+<%//Add your own code
+if (!input.hasMessages(inIoXG1) || !input.hasMessages(inIoXC1));
+Serializable variable1 = messageList.get(0).getData();
+%>!
+hold in trans11 for time 0!
+after trans11 output IoXG2!
+from trans11 go to SG1!
+
+output event for trans11  
+<%//Add your own code
+output.add(outIoXG2,null);
+output.add(outIoXC1,null);
+%>!
+
+internal event for trans11  
+<%//place your own code for internal event here.
+%>!

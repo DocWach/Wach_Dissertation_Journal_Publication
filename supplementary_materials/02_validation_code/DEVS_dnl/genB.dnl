@@ -1,0 +1,54 @@
+
+generates output on IoXB2!
+generates output on IoXB3!
+generates output on IoXB4!
+generates output on IoXB1!
+
+
+
+to start hold in SendX for time 1!
+after SendX output IoXB2!
+from SendX go to SendY!
+
+output event for SendX  
+<%//Add your own code
+output.add(outIoXB2,null);%>!
+
+internal event for SendX  
+<%//place your own code for internal event here.%>!
+hold in SendY for time 1!
+after SendY output IoXB3!
+from SendY go to SendZ!
+
+output event for SendY  
+<%//Add your own code
+output.add(outIoXB3,null);%>!
+
+internal event for SendY  
+<%//place your own code for internal event here.%>!
+hold in SendZ for time 1!
+after SendZ output IoXB4!
+from SendZ go to SendW!
+
+output event for SendZ  
+<%//Add your own code
+output.add(outIoXB4,null);
+%>!
+
+internal event for SendZ  
+<%//place your own code for internal event here.
+%>!
+hold in SendW for time 1!
+after SendW output IoXB1!
+from SendW go to passive!
+
+output event for SendW  
+<%//Add your own code
+output.add(outIoXB1,null);
+%>!
+
+internal event for SendW  
+<%//place your own code for internal event here.
+%>!
+passivate in passive!
+

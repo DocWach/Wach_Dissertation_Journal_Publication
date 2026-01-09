@@ -1,0 +1,32 @@
+
+generates output on IoXA1!
+generates output on IoXA2!
+generates output on IoXC1!
+
+to start hold in SendX for time 1!
+after SendX output IoXA2!
+from SendX go to SendY!
+  
+output event for SendX  
+<%//Add your own code
+output.add(outIoXA2,null);
+output.add(outIoXC1,null);
+%>!
+
+internal event for SendX  
+<%//place your own code for internal event here.
+%>!
+hold in SendY for time 1!
+after SendY output IoXA1!
+from SendY go to passive!
+
+output event for SendY  
+<%//Add your own code
+output.add(outIoXA1,null);
+output.add(outIoXC1,null);
+%>!
+
+internal event for SendY  
+<%//place your own code for internal event here.
+%>!
+passivate in passive!

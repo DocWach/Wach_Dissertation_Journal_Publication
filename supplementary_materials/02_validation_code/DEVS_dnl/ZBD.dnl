@@ -1,0 +1,115 @@
+
+accepts input on IoXB3!
+accepts input on IoXB1!
+accepts input on IoXB2!
+accepts input on IoXB4!
+generates output on IoXB9!
+generates output on IoXB10!
+generates output on IoXB8!
+
+
+
+to start passivate in SBD1!
+when in SBD1 and receive IoXB3 go to SBD1!
+
+external event for SBD1 with IoXB3 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD1 and receive IoXB1 go to SBD1!
+
+external event for SBD1 with IoXB1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD1 and receive IoXB2 go to trans12!
+
+external event for SBD1 with IoXB2 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD1 and receive IoXB4 go to SBD1!
+
+external event for SBD1 with IoXB4 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+hold in trans12 for time 0!
+after trans12 output IoXB9!
+from trans12 go to SBD2!
+
+output event for trans12  
+<%//Add your own code
+output.add(outIoXB9,null);%>!
+
+internal event for trans12  
+<%//place your own code for internal event here.%>!
+passivate in SBD2!
+when in SBD2 and receive IoXB3 go to trans23!
+
+external event for SBD2 with IoXB3 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD2 and receive IoXB1 go to trans21!
+
+external event for SBD2 with IoXB1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD2 and receive IoXB4 go to SBD2!
+
+external event for SBD2 with IoXB4 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD2 and receive IoXB2 go to SBD2!
+
+external event for SBD2 with IoXB2 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+hold in trans23 for time 0!
+after trans23 output IoXB10!
+from trans23 go to SBD3!
+
+output event for trans23  
+<%//Add your own code
+output.add(outIoXB10,null);%>!
+
+internal event for trans23  
+<%//place your own code for internal event here.%>!
+hold in trans21 for time 0!
+after trans21 output IoXB8!
+from trans21 go to SBD1!
+
+output event for trans21  
+<%//Add your own code
+output.add(outIoXB8,null);%>!
+
+internal event for trans21  
+<%//place your own code for internal event here.%>!
+passivate in SBD3!
+when in SBD3 and receive IoXB4 go to trans32!
+
+external event for SBD3 with IoXB4 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD3 and receive IoXB1 go to SBD3!
+
+external event for SBD3 with IoXB1 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD3 and receive IoXB2 go to SBD3!
+
+external event for SBD3 with IoXB2 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+when in SBD3 and receive IoXB3 go to SBD3!
+
+external event for SBD3 with IoXB3 
+<%//Add your own code
+Serializable variable = messageList.get(0).getData();%>!
+hold in trans32 for time 0!
+after trans32 output IoXB9!
+from trans32 go to SBD2!
+
+output event for trans32  
+<%//Add your own code
+output.add(outIoXB9,null);%>!
+
+internal event for trans32  
+<%//place your own code for internal event here.%>!
+
