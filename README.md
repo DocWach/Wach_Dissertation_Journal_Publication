@@ -110,4 +110,4 @@ This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/
 
 **Paul F. Wach, Ph.D.**
 University of Arizona
-[pfwach@arizona.edu](mailto:pfwach@arizona.edu)
+[paulwach@arizona.edu](mailto:paulwach@arizona.edu)
